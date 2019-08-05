@@ -3,13 +3,9 @@
 ## Built By [Mark Mumba](https://github.com/markmumba/)
 
 ## Screenshots
-![homepage](app/static/photos/home.png);
+![homepage](app/static/photos/yes.png);
 
-![register](app/static/photos/register.png);
 
-![Add A Pitch](app/static/photos/pitch.png);
-
-![View Pitch](app/static/photos/pitch_base.png);
 
 ## Description
 Perfect Pitch is an application that allows you to Post a pitch based on various categories.You can view other pitches as long as you have an account and can either comment or upvote or downvote
