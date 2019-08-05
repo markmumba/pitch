@@ -1,58 +1,84 @@
-# One Minute Pitch
-## An application that allows users to make one minute pitches and get feedback and votes on them., 
+# Pitch
 
-## By **[Mark  Mumba ](https://github.com/markmumba)**
+## Built By [Mark Mumba](https://github.com/markmumba/)
+
+## Screenshots
+![homepage](app/static/photos/home.png);
+
+![register](app/static/photos/register.png);
+
+![Add A Pitch](app/static/photos/pitch.png);
+
+![View Pitch](app/static/photos/pitch_base.png);
 
 ## Description
-[This](https://python-one-minute-pitch.herokuapp.com) is a web application that allows users to submit a pitch. Also, other users are allowed to vote on submitted pitches and leave comments to give their feedback on the pitches. For a user to submit a pitch, vote on a pitch or give feedback on a pitch they need to have an account. <br>
+Perfect Pitch is an application that allows you to Post a pitch based on various categories.You can view other pitches as long as you have an account and can either comment or upvote or downvote
 
-The pitches are organized by categories. Examples of categories: <br> 
-- pickup lines
-- interview pitches
-- product pitches
-- promotion pitches
+You can view the site at: 
 
 ## User Stories
-As a user I would like:
-* to view the different categories
-* to see the pitches other people have posted
-* to submit a pitch in any category
-* to comment on the different pitches and leave feedback
-* to vote on the pitch and give it a downvote or upvote
+These are the behaviours/features that the application implements for use by a user.
 
-## Behaviour Driven Development
-| Behavior        | Input           | Outcome  |
-| ------------- |:-------------:| -----:|
-| Register to be a user | Your email : jane@doe.com <br> Username : jane101 <br> Password : doe1 | New user is registered |
-| Log in | Your email : jane@doe.com <br> Password : doe1 | Logged in |
-| Display pitch categories | N/A | List of various pitch categories |
-| See pitches from selected category | **Click** a category | Directed to a page with a list of pitches from the selected category |
-| Create a pitch | **Click Create A Pitch** | An authenticated user is directed to a page with a form where the user can create and submit a pitch |
-| See a pitch | **Click** on a pitch | A user is directed to a page containing the pitch, its comments and its votes |
-| Comment on a pitch | **Click Comment** | An authenticated user is directed to a page with a form where the user can create and submit a comment on a pitch |
-| Upvote on a pitch | **Click** on upvote glyphicon | The votes on the pitch increases by one |
-| Downvote on a pitch | **Click** on downvote glyphicon | The votes on the pitch decreases by one |
+As a user I would like to:
+* See various news sources 
+* Select the ones they prefer
+* See the top news articles from that news source
+* See the image, description and time the news article was created
+* Click on an article and read it fully from the news source
 
-## Setup/Installation Requirements
+## Specifications
+| Behaviour | Input | Output |
+| :---------------- | :---------------: | ------------------: |
+| Display Welcome Message | **On page load** | Select between Add a pitch and View Pitch|
+| Display Pitch Form | **Click add pitch** | Redirected to a page where He types the title and content and then selects the category from the drop-down arrow|
+| Display the Pitch| **Click view pitch** | Each pitch displays  title, description and category|
 
-* Click [One Minute Pitch] <br/>
-  or <br/>
-* Copy [One Minute Pitch] and  Paste the link on your prefered browerser
 
-This requires internet connection.
 
-## Known Bugs
+## SetUp / Installation Requirements
+### Prerequisites
+* python3.6
+* pip
+* virtualenv
 
-- Vote count
+### Cloning
+* In your terminal:
+        
+        $ git clone https://github.com/markmumba/pitch.git
+        $ cd News-Highlights
 
+## Running the Application
+* Creating the virtual environment
+
+        $ python3.6 -m venv --without-pip virtual
+        $ source virtual/bin/env
+        $ curl https://bootstrap.pypa.io/get-pip.py | python 
+        
+* Installing Flask and other Modules
+
+        $ python3.6 -m pip install Flask
+        $ python3.6 -m pip install Flask-Bootstrap
+        $ python3.6 -m pip install Flask-Font-Mail
+        $ python3.6 -m pip install Flask-upload
+        $ python3.6 -m pip install Flask-login
+        $ python3.6 -m pip install Flask-Alchemy
+        $ python3.6 -m pip install Flask-Simplemde
+
+        
+        
+* To run the application, in your terminal:
+
+        $ chmod +x start.sh
+        $ ./start.sh
+        
+## Testing the Application
+* To run the tests for the class files:
+
+        $ python3.6 manage.py tests
+        
 ## Technologies Used
-- Python3.6
-- Flask
-- Bootstrap
-- Postgres Database
-- CSS
-- HTML
+* Python3.6
+* Flask
 
-### License
-
-MIT (c) 2017 **[Markian Mumba ](https://github.com/markmumba)**
+## License
+MIT &copy;2019 [Mark ian Mumba](https://github.com/markmumba/)

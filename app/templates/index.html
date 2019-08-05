@@ -1,26 +1,30 @@
 {% extends 'base.html' %}
 {% import 'macros.html' as macro %}
 <!-- styles block -->
-{% block styles %}
+
+{%block styles%} 
 {{ super() }}
+<link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+<link href="https://fonts.googleapis.com/css?family=Lacquer&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+{%endblock%}
 
 <!-- <link rel="stylesheet" href="{{url_for('static', filename = 'css/styles.css')}}"> -->
-
-{% endblock %}
 
 <!-- content block -->
 {% block content %}
 <div class="container" id="index-container">
     <div class="row ">
-        
+        <div class=" mark animated fadeIn">
             <h1>One Minute Pitch</h1>
             <h2>You have 60 seconds. That's all you have to impress someone. Use that minute wisely here.
                 and pitch your ideas in the different categories below! </h2>
+        </div>
         <div class="col-md-3">
 
         </div>
 
-        <div class="col-md-6">
+        <div class="col-md-6 animated rollIn">
             <a href="{{url_for('main.new_pitch')}}" class="btn btn-primary">Click To Add Pitch</a>
             <a href="{{url_for('main.post_pitch')}}" class="btn btn-primary">View Your Pitch</a>
         </div>
