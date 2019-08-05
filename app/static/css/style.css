@@ -1,11 +1,7 @@
 body{
-    background-image: url(/home/mark/Pitch/app/static/photos/benjamin-sow-CB4z0uTFSYg-unsplash.jpg);
-    font-family: 'Lacquer', sans-serif;
+    background-color:#11181B  ;
+    font-family: 'Single Day', cursive;
     font-size: 60px;
-
-
-
-
 }
 .mark{
     animation-duration: 4s;
